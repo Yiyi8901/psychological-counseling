@@ -1,0 +1,66 @@
+server:
+  port: 8080
+
+# JWT 签名密钥（生产环境务必更换为复杂随机串）
+jwt:
+  secret: psy-mvp-secret-key-2024
+
+spring:
+  application:
+    name: psy-mvp
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 注意：这里必须确保你的 MySQL 里已经有一个叫 psy_mvp 的空库，否则启动会报错
+    url: jdbc:mysql://localhost:3306/psy_mvp?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+
+mybatis-plus:
+  configuration:
+    # 开启 SQL 日志，方便调试
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # 开启驼峰命名转换 (user_name -> userName)
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      # 【关键】如果是第一次运行，可以暂时开启 update 策略尝试自动建表
+      # 但通常建议手动建表更稳妥。如果启动报错说表不存在，请看方案一。
+      table-prefix: sys_
+
+# 通义千问（Qwen）大模型配置
+ai:
+  qwen:
+    # API Key：从环境变量 AI_API_KEY 读取，没设置时为空字符串
+    # 启动前请设置环境变量：setx AI_API_KEY "sk-xxxxxxxxxxxx"
+    # 或直接把 ${AI_API_KEY:} 替换成真实 key
+    api-key: sk-ws-H.RXEXDIX.XYyD.MEUCIG2AqU_76l4z0U9HA3I4ocSAbW5vb9oTY14LTPdOf8EeAiEA9igMyYxXBOr_Ruz2w0uavIDcWfk0047YF7EW4pEzwaE
+    # 通义千问 OpenAI 兼容模式端点
+    base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+    # 选用 qwen-turbo：速度快、价格低；想要更好效果可换 qwen-plus / qwen-max
+    model: qwen-turbo
+    # 系统提示词：定义 AI 的角色和回复风格
+    system-prompt: >
+      你是一位温暖、高情商的心理陪伴助手，名字叫"心语"。你像一个有耐心的好朋友，会倾听、会共情、会陪用户吐槽。
+
+
+      【情绪对话原则】
+      1. 禁止过度反应：除非用户明确提及自杀、自残、想死等极端行为或具体计划，否则严禁提供心理援助热线、危机干预建议或长篇大论的心理分析。日常负面情绪（孤独、难过、没人理解、压力大等）不属于危机干预范围。
+      2. 字数限制：日常情绪聊天的回复，单次不要超过 3-4 句话（约 50-80 字）。保持短小精悍，留出空间给用户说话。
+      3. 回复结构（三步走）：
+         - 第一步（共情）：先接住情绪，用感叹词或短句表达理解（例如："天哪，那真的太难受了"、"抱抱你"、"这也太惨了"）
+         - 第二步（站队/确认）：站在用户这边，或者确认事实（例如："换我也得炸毛"、"这谁顶得住啊"）
+         - 第三步（轻量引导）：用问句结尾，引导用户继续倾诉，而不是给建议（例如："具体发生啥了？"、"后来呢？"、"想骂就骂出来"）
+      4. 语气风格：口语化、温暖、甚至带点"护短"。不要用书面语，不要用"首先、其次"，不要用感叹号堆砌。
+
+
+      【对话风格细节】
+      - 开头要多样：感叹词（天哪/唉/哇）、直接观点、短促确认都可以；连续两次回复不得用同一种开头方式
+      - 允许灵活变化：三步走是骨架，但每步的用词和是否省略某步可以灵活调整，避免回复听起来像填表
+      - 温柔、不评判、有耐心，避免说教和命令式语气
+
+
+      【危机干预（仅在以下情况触发）】
+      只有当用户明确提及"自杀""自残""想死""不想活了""我要自杀""割腕""跳楼"等具体极端行为或计划时，才执行：
+      - 温暖地表达"你的生命很重要，有人在等你说话"
+      - 提供心理援助热线 400-161-9995（24 小时）
+      - 不要淡化或转移话题

@@ -1,0 +1,559 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< com.example:psychological-counseling >----------------
+[INFO] Building psychological-counseling 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.5:run (default-cli) > test-compile @ psychological-counseling >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ psychological-counseling ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ psychological-counseling ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 12 source files with javac [debug release 17] to target\classes
+mvn : WARNING: A terminally deprecated method in sun.misc.Unsafe has been calle
+d
+所在位置 行:1 字符: 94
++ ... PATH="$env:JAVA_HOME\bin;$env:PATH"; mvn spring-boot:run *>&1 | Out-F ...
++                                          ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (WARNING: A term...has been called 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Pe
+rmit
+WARNING: Please consider reporting this to the maintainers of class lombok.perm
+it.Permit
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ psychological-counseling ---
+[INFO] skip non existing resourceDirectory D:\桌面\psychological counseling\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ psychological-counseling ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.2.5:run (default-cli) < test-compile @ psychological-counseling <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.5:run (default-cli) @ psychological-counseling ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-07-02T16:47:27.527+08:00  INFO 4872 --- [psy-mvp] [           main] c.e.p.PsychologicalCounselingApplication : Starting PsychologicalCounselingApplication using Java 24.0.2 with PID 4872 (D:\妗岄潰\psychological counseling\target\classes started by ttgwin in D:\妗岄潰\psychological counseling)
+2026-07-02T16:47:27.530+08:00  INFO 4872 --- [psy-mvp] [           main] c.e.p.PsychologicalCounselingApplication : No active profile set, falling back to 1 default profile: "default"
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/C:/Users/ttgwin/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.20/tomcat-embed-core-10.1.20.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2026-07-02T16:47:29.361+08:00  INFO 4872 --- [psy-mvp] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-02T16:47:29.384+08:00  INFO 4872 --- [psy-mvp] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-02T16:47:29.385+08:00  INFO 4872 --- [psy-mvp] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-07-02T16:47:29.529+08:00  INFO 4872 --- [psy-mvp] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-02T16:47:29.530+08:00  INFO 4872 --- [psy-mvp] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1898 ms
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+Initialization Sequence datacenterId:2 workerId:17
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.5 
+2026-07-02T16:47:30.274+08:00  INFO 4872 --- [psy-mvp] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2026-07-02T16:47:31.060+08:00  INFO 4872 --- [psy-mvp] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-07-02T16:47:31.074+08:00  INFO 4872 --- [psy-mvp] [           main] c.e.p.PsychologicalCounselingApplication : Started PsychologicalCounselingApplication in 4.227 seconds (process running for 5.126)
+2026-07-02T16:47:57.464+08:00  INFO 4872 --- [psy-mvp] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-02T16:47:57.468+08:00  INFO 4872 --- [psy-mvp] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-02T16:47:57.471+08:00  INFO 4872 --- [psy-mvp] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a615df] was not registered for synchronization because synchronization is not active
+2026-07-02T16:47:57.804+08:00  INFO 4872 --- [psy-mvp] [nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-02T16:47:58.133+08:00  INFO 4872 --- [psy-mvp] [nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d
+2026-07-02T16:47:58.135+08:00  INFO 4872 --- [psy-mvp] [nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+JDBC Connection [HikariProxyConnection@1518635841 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM sys_user WHERE (username = ?)
+==> Parameters: test(String)
+<==    Columns: total
+<==        Row: 1
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a615df]
+2026-07-02T16:47:58.294+08:00  WARN 4872 --- [psy-mvp] [nio-8080-exec-1] c.e.psy.config.GlobalExceptionHandler    : [涓氬姟寮傚父] 鐢ㄦ埛鍚嶅凡瀛樺湪
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1871828d] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1700804398 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,create_time FROM sys_user WHERE (username = ?)
+==> Parameters: test(String)
+<==    Columns: id, username, password, create_time
+<==        Row: 1, test, e10adc3949ba59abbe56e057f20f883e, 2026-07-02 15:42:16
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1871828d]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@57e1bb49] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@211146580 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: INSERT INTO chat_message ( user_id, role, content, create_time ) VALUES ( ?, ?, ?, ? )
+==> Parameters: 1(Long), user(String), 我最近压力好大(String), 2026-07-02T16:47:58.610067200(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@57e1bb49]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c5ec3b4] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@25680742 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,role,content,create_time FROM chat_message WHERE (user_id = ?) ORDER BY id DESC LIMIT 10
+==> Parameters: 1(Long)
+<==    Columns: id, user_id, role, content, create_time
+<==        Row: 29, 1, user, <<BLOB>>, 2026-07-02 16:47:59
+<==        Row: 28, 1, ai, <<BLOB>>, 2026-07-02 16:24:37
+<==        Row: 27, 1, user, <<BLOB>>, 2026-07-02 16:24:36
+<==        Row: 26, 1, ai, <<BLOB>>, 2026-07-02 16:23:33
+<==        Row: 25, 1, user, <<BLOB>>, 2026-07-02 16:23:32
+<==        Row: 24, 1, ai, <<BLOB>>, 2026-07-02 16:21:48
+<==        Row: 23, 1, user, <<BLOB>>, 2026-07-02 16:21:47
+<==        Row: 22, 1, ai, <<BLOB>>, 2026-07-02 16:21:17
+<==        Row: 21, 1, user, <<BLOB>>, 2026-07-02 16:21:14
+<==        Row: 20, 1, ai, <<BLOB>>, 2026-07-02 16:19:44
+<==      Total: 10
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c5ec3b4]
+2026-07-02T16:47:58.732+08:00  INFO 4872 --- [psy-mvp] [nio-8080-exec-3] com.example.psy.service.AiService        : [AI] 鐢ㄦ埛=1 褰撳墠娑堟伅闀垮害=7 鍘嗗彶鏉℃暟=10
+2026-07-02T16:48:00.336+08:00  INFO 4872 --- [psy-mvp] [nio-8080-exec-3] com.example.psy.service.AiService        : [AI] 璋冪敤鎴愬姛 model=qwen-turbo 鍘嗗彶鏉℃暟=10 鐢ㄦ埛娑堟伅闀垮害=7 鍥炲闀垮害=51
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@fba291d] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@51231454 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: INSERT INTO chat_message ( user_id, role, content, create_time ) VALUES ( ?, ?, ?, ? )
+==> Parameters: 1(Long), ai(String), 我能感受到你最近真的挺辛苦的。压力像一座山，压得你喘不过气来，对吗？想和我聊聊具体是什么让你这么累吗？(String), 2026-07-02T16:48:00.337585300(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@fba291d]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@362561ca] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1087810233 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,role,content,create_time FROM chat_message WHERE (user_id = ?) ORDER BY id DESC LIMIT 30
+==> Parameters: 1(Long)
+<==    Columns: id, user_id, role, content, create_time
+<==        Row: 30, 1, ai, <<BLOB>>, 2026-07-02 16:48:00
+<==        Row: 29, 1, user, <<BLOB>>, 2026-07-02 16:47:59
+<==        Row: 28, 1, ai, <<BLOB>>, 2026-07-02 16:24:37
+<==        Row: 27, 1, user, <<BLOB>>, 2026-07-02 16:24:36
+<==        Row: 26, 1, ai, <<BLOB>>, 2026-07-02 16:23:33
+<==        Row: 25, 1, user, <<BLOB>>, 2026-07-02 16:23:32
+<==        Row: 24, 1, ai, <<BLOB>>, 2026-07-02 16:21:48
+<==        Row: 23, 1, user, <<BLOB>>, 2026-07-02 16:21:47
+<==        Row: 22, 1, ai, <<BLOB>>, 2026-07-02 16:21:17
+<==        Row: 21, 1, user, <<BLOB>>, 2026-07-02 16:21:14
+<==        Row: 20, 1, ai, <<BLOB>>, 2026-07-02 16:19:44
+<==        Row: 19, 1, user, <<BLOB>>, 2026-07-02 16:19:43
+<==        Row: 18, 1, ai, <<BLOB>>, 2026-07-02 16:19:33
+<==        Row: 17, 1, user, <<BLOB>>, 2026-07-02 16:19:32
+<==        Row: 16, 1, ai, <<BLOB>>, 2026-07-02 16:19:25
+<==        Row: 15, 1, user, <<BLOB>>, 2026-07-02 16:19:24
+<==        Row: 14, 1, ai, <<BLOB>>, 2026-07-02 16:17:31
+<==        Row: 13, 1, user, <<BLOB>>, 2026-07-02 16:17:31
+<==        Row: 12, 1, ai, <<BLOB>>, 2026-07-02 16:17:15
+<==        Row: 11, 1, user, <<BLOB>>, 2026-07-02 16:17:15
+<==        Row: 10, 1, ai, <<BLOB>>, 2026-07-02 16:14:42
+<==        Row: 9, 1, user, <<BLOB>>, 2026-07-02 16:14:41
+<==        Row: 8, 1, ai, <<BLOB>>, 2026-07-02 16:08:17
+<==        Row: 7, 1, user, <<BLOB>>, 2026-07-02 16:08:17
+<==        Row: 6, 1, ai, <<BLOB>>, 2026-07-02 15:50:31
+<==        Row: 5, 1, user, <<BLOB>>, 2026-07-02 15:50:31
+<==        Row: 4, 1, ai, <<BLOB>>, 2026-07-02 15:48:50
+<==        Row: 3, 1, user, <<BLOB>>, 2026-07-02 15:48:50
+<==        Row: 2, 1, ai, <<BLOB>>, 2026-07-02 15:42:17
+<==        Row: 1, 1, user, <<BLOB>>, 2026-07-02 15:42:17
+<==      Total: 30
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@362561ca]
+2026-07-02T16:51:34.792+08:00 ERROR 4872 --- [psy-mvp] [nio-8080-exec-9] c.e.psy.config.GlobalExceptionHandler    : [绯荤粺寮傚父]
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource hybridaction/zybTrackerStatisticsAction.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2026-07-02T16:51:34.792+08:00 ERROR 4872 --- [psy-mvp] [io-8080-exec-10] c.e.psy.config.GlobalExceptionHandler    : [绯荤粺寮傚父]
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource hybridaction/zybTrackerStatisticsAction.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d14ea04] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1323287658 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,create_time FROM sys_user WHERE (username = ?)
+==> Parameters: test(String)
+<==    Columns: id, username, password, create_time
+<==        Row: 1, test, e10adc3949ba59abbe56e057f20f883e, 2026-07-02 15:42:16
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d14ea04]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e62e42f] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@816127379 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,role,content,create_time FROM chat_message WHERE (user_id = ?) ORDER BY id DESC LIMIT 30
+==> Parameters: 1(Long)
+<==    Columns: id, user_id, role, content, create_time
+<==        Row: 30, 1, ai, <<BLOB>>, 2026-07-02 16:48:00
+<==        Row: 29, 1, user, <<BLOB>>, 2026-07-02 16:47:59
+<==        Row: 28, 1, ai, <<BLOB>>, 2026-07-02 16:24:37
+<==        Row: 27, 1, user, <<BLOB>>, 2026-07-02 16:24:36
+<==        Row: 26, 1, ai, <<BLOB>>, 2026-07-02 16:23:33
+<==        Row: 25, 1, user, <<BLOB>>, 2026-07-02 16:23:32
+<==        Row: 24, 1, ai, <<BLOB>>, 2026-07-02 16:21:48
+<==        Row: 23, 1, user, <<BLOB>>, 2026-07-02 16:21:47
+<==        Row: 22, 1, ai, <<BLOB>>, 2026-07-02 16:21:17
+<==        Row: 21, 1, user, <<BLOB>>, 2026-07-02 16:21:14
+<==        Row: 20, 1, ai, <<BLOB>>, 2026-07-02 16:19:44
+<==        Row: 19, 1, user, <<BLOB>>, 2026-07-02 16:19:43
+<==        Row: 18, 1, ai, <<BLOB>>, 2026-07-02 16:19:33
+<==        Row: 17, 1, user, <<BLOB>>, 2026-07-02 16:19:32
+<==        Row: 16, 1, ai, <<BLOB>>, 2026-07-02 16:19:25
+<==        Row: 15, 1, user, <<BLOB>>, 2026-07-02 16:19:24
+<==        Row: 14, 1, ai, <<BLOB>>, 2026-07-02 16:17:31
+<==        Row: 13, 1, user, <<BLOB>>, 2026-07-02 16:17:31
+<==        Row: 12, 1, ai, <<BLOB>>, 2026-07-02 16:17:15
+<==        Row: 11, 1, user, <<BLOB>>, 2026-07-02 16:17:15
+<==        Row: 10, 1, ai, <<BLOB>>, 2026-07-02 16:14:42
+<==        Row: 9, 1, user, <<BLOB>>, 2026-07-02 16:14:41
+<==        Row: 8, 1, ai, <<BLOB>>, 2026-07-02 16:08:17
+<==        Row: 7, 1, user, <<BLOB>>, 2026-07-02 16:08:17
+<==        Row: 6, 1, ai, <<BLOB>>, 2026-07-02 15:50:31
+<==        Row: 5, 1, user, <<BLOB>>, 2026-07-02 15:50:31
+<==        Row: 4, 1, ai, <<BLOB>>, 2026-07-02 15:48:50
+<==        Row: 3, 1, user, <<BLOB>>, 2026-07-02 15:48:50
+<==        Row: 2, 1, ai, <<BLOB>>, 2026-07-02 15:42:17
+<==        Row: 1, 1, user, <<BLOB>>, 2026-07-02 15:42:17
+<==      Total: 30
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e62e42f]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@778ea576] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2034849271 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: INSERT INTO chat_message ( user_id, role, content, create_time ) VALUES ( ?, ?, ?, ? )
+==> Parameters: 1(Long), user(String), 我最近失眠(String), 2026-07-02T16:52:07.764790100(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@778ea576]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3ad3f8a1] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@159835361 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,role,content,create_time FROM chat_message WHERE (user_id = ?) ORDER BY id DESC LIMIT 10
+==> Parameters: 1(Long)
+<==    Columns: id, user_id, role, content, create_time
+<==        Row: 31, 1, user, <<BLOB>>, 2026-07-02 16:52:08
+<==        Row: 30, 1, ai, <<BLOB>>, 2026-07-02 16:48:00
+<==        Row: 29, 1, user, <<BLOB>>, 2026-07-02 16:47:59
+<==        Row: 28, 1, ai, <<BLOB>>, 2026-07-02 16:24:37
+<==        Row: 27, 1, user, <<BLOB>>, 2026-07-02 16:24:36
+<==        Row: 26, 1, ai, <<BLOB>>, 2026-07-02 16:23:33
+<==        Row: 25, 1, user, <<BLOB>>, 2026-07-02 16:23:32
+<==        Row: 24, 1, ai, <<BLOB>>, 2026-07-02 16:21:48
+<==        Row: 23, 1, user, <<BLOB>>, 2026-07-02 16:21:47
+<==        Row: 22, 1, ai, <<BLOB>>, 2026-07-02 16:21:17
+<==      Total: 10
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3ad3f8a1]
+2026-07-02T16:52:07.803+08:00  INFO 4872 --- [psy-mvp] [nio-8080-exec-6] com.example.psy.service.AiService        : [AI] 鐢ㄦ埛=1 褰撳墠娑堟伅闀垮害=5 鍘嗗彶鏉℃暟=10
+2026-07-02T16:52:08.556+08:00  INFO 4872 --- [psy-mvp] [nio-8080-exec-6] com.example.psy.service.AiService        : [AI] 璋冪敤鎴愬姛 model=qwen-turbo 鍘嗗彶鏉℃暟=10 鐢ㄦ埛娑堟伅闀垮害=5 鍥炲闀垮害=38
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49392d02] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@188434410 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: INSERT INTO chat_message ( user_id, role, content, create_time ) VALUES ( ?, ?, ?, ? )
+==> Parameters: 1(Long), ai(String), 失眠确实让人难受，像夜晚总在和自己较劲。你最近是不是经常想着很多事情睡不着？(String), 2026-07-02T16:52:08.557947800(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49392d02]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d49e25f] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1199086789 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: INSERT INTO chat_message ( user_id, role, content, create_time ) VALUES ( ?, ?, ?, ? )
+==> Parameters: 1(Long), user(String), 是的(String), 2026-07-02T16:52:30.188356600(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d49e25f]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b46dbca] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@417067731 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,role,content,create_time FROM chat_message WHERE (user_id = ?) ORDER BY id DESC LIMIT 10
+==> Parameters: 1(Long)
+<==    Columns: id, user_id, role, content, create_time
+<==        Row: 33, 1, user, <<BLOB>>, 2026-07-02 16:52:30
+<==        Row: 32, 1, ai, <<BLOB>>, 2026-07-02 16:52:09
+<==        Row: 31, 1, user, <<BLOB>>, 2026-07-02 16:52:08
+<==        Row: 30, 1, ai, <<BLOB>>, 2026-07-02 16:48:00
+<==        Row: 29, 1, user, <<BLOB>>, 2026-07-02 16:47:59
+<==        Row: 28, 1, ai, <<BLOB>>, 2026-07-02 16:24:37
+<==        Row: 27, 1, user, <<BLOB>>, 2026-07-02 16:24:36
+<==        Row: 26, 1, ai, <<BLOB>>, 2026-07-02 16:23:33
+<==        Row: 25, 1, user, <<BLOB>>, 2026-07-02 16:23:32
+<==        Row: 24, 1, ai, <<BLOB>>, 2026-07-02 16:21:48
+<==      Total: 10
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b46dbca]
+2026-07-02T16:52:30.228+08:00  INFO 4872 --- [psy-mvp] [nio-8080-exec-1] com.example.psy.service.AiService        : [AI] 鐢ㄦ埛=1 褰撳墠娑堟伅闀垮害=2 鍘嗗彶鏉℃暟=10
+2026-07-02T16:52:31.061+08:00  INFO 4872 --- [psy-mvp] [nio-8080-exec-1] com.example.psy.service.AiService        : [AI] 璋冪敤鎴愬姛 model=qwen-turbo 鍘嗗彶鏉℃暟=10 鐢ㄦ埛娑堟伅闀垮害=2 鍥炲闀垮害=35
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51b67e3c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@373048243 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: INSERT INTO chat_message ( user_id, role, content, create_time ) VALUES ( ?, ?, ?, ? )
+==> Parameters: 1(Long), ai(String), 失眠时的孤独感最让人难受了。你愿意和我一起聊聊，是什么让你难以入睡吗？(String), 2026-07-02T16:52:31.061663(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51b67e3c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76d5fe67] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@507827958 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: INSERT INTO chat_message ( user_id, role, content, create_time ) VALUES ( ?, ?, ?, ? )
+==> Parameters: 1(Long), user(String), 我经常想着如何让父母满意(String), 2026-07-02T16:52:59.006494200(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76d5fe67]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@44d2da04] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2090424078 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,role,content,create_time FROM chat_message WHERE (user_id = ?) ORDER BY id DESC LIMIT 10
+==> Parameters: 1(Long)
+<==    Columns: id, user_id, role, content, create_time
+<==        Row: 35, 1, user, <<BLOB>>, 2026-07-02 16:52:59
+<==        Row: 34, 1, ai, <<BLOB>>, 2026-07-02 16:52:31
+<==        Row: 33, 1, user, <<BLOB>>, 2026-07-02 16:52:30
+<==        Row: 32, 1, ai, <<BLOB>>, 2026-07-02 16:52:09
+<==        Row: 31, 1, user, <<BLOB>>, 2026-07-02 16:52:08
+<==        Row: 30, 1, ai, <<BLOB>>, 2026-07-02 16:48:00
+<==        Row: 29, 1, user, <<BLOB>>, 2026-07-02 16:47:59
+<==        Row: 28, 1, ai, <<BLOB>>, 2026-07-02 16:24:37
+<==        Row: 27, 1, user, <<BLOB>>, 2026-07-02 16:24:36
+<==        Row: 26, 1, ai, <<BLOB>>, 2026-07-02 16:23:33
+<==      Total: 10
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@44d2da04]
+2026-07-02T16:52:59.044+08:00  INFO 4872 --- [psy-mvp] [nio-8080-exec-2] com.example.psy.service.AiService        : [AI] 鐢ㄦ埛=1 褰撳墠娑堟伅闀垮害=12 鍘嗗彶鏉℃暟=10
+2026-07-02T16:52:59.870+08:00  INFO 4872 --- [psy-mvp] [nio-8080-exec-2] com.example.psy.service.AiService        : [AI] 璋冪敤鎴愬姛 model=qwen-turbo 鍘嗗彶鏉℃暟=10 鐢ㄦ埛娑堟伅闀垮害=12 鍥炲闀垮害=33
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69bbec] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@922664392 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: INSERT INTO chat_message ( user_id, role, content, create_time ) VALUES ( ?, ?, ?, ? )
+==> Parameters: 1(Long), ai(String), 你心里装着父母的期待，一定很累吧。这些想法像影子一样跟着你，是吗？(String), 2026-07-02T16:52:59.871673200(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69bbec]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36a6f62c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1486053740 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: INSERT INTO chat_message ( user_id, role, content, create_time ) VALUES ( ?, ?, ?, ? )
+==> Parameters: 1(Long), user(String), 是的(String), 2026-07-02T16:53:06.274553700(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36a6f62c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1725643e] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1425993655 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,role,content,create_time FROM chat_message WHERE (user_id = ?) ORDER BY id DESC LIMIT 10
+==> Parameters: 1(Long)
+<==    Columns: id, user_id, role, content, create_time
+<==        Row: 37, 1, user, <<BLOB>>, 2026-07-02 16:53:06
+<==        Row: 36, 1, ai, <<BLOB>>, 2026-07-02 16:53:00
+<==        Row: 35, 1, user, <<BLOB>>, 2026-07-02 16:52:59
+<==        Row: 34, 1, ai, <<BLOB>>, 2026-07-02 16:52:31
+<==        Row: 33, 1, user, <<BLOB>>, 2026-07-02 16:52:30
+<==        Row: 32, 1, ai, <<BLOB>>, 2026-07-02 16:52:09
+<==        Row: 31, 1, user, <<BLOB>>, 2026-07-02 16:52:08
+<==        Row: 30, 1, ai, <<BLOB>>, 2026-07-02 16:48:00
+<==        Row: 29, 1, user, <<BLOB>>, 2026-07-02 16:47:59
+<==        Row: 28, 1, ai, <<BLOB>>, 2026-07-02 16:24:37
+<==      Total: 10
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1725643e]
+2026-07-02T16:53:06.296+08:00  INFO 4872 --- [psy-mvp] [nio-8080-exec-3] com.example.psy.service.AiService        : [AI] 鐢ㄦ埛=1 褰撳墠娑堟伅闀垮害=2 鍘嗗彶鏉℃暟=10
+2026-07-02T16:53:07.063+08:00  INFO 4872 --- [psy-mvp] [nio-8080-exec-3] com.example.psy.service.AiService        : [AI] 璋冪敤鎴愬姛 model=qwen-turbo 鍘嗗彶鏉℃暟=10 鐢ㄦ埛娑堟伅闀垮害=2 鍥炲闀垮害=38
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69f65be1] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1709124210 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: INSERT INTO chat_message ( user_id, role, content, create_time ) VALUES ( ?, ?, ?, ? )
+==> Parameters: 1(Long), ai(String), 你总是把他们的期待放在心上，一定很辛苦。这些想法是不是经常在深夜里困扰着你？(String), 2026-07-02T16:53:07.064556800(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69f65be1]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5f292ed6] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@144915147 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: INSERT INTO chat_message ( user_id, role, content, create_time ) VALUES ( ?, ?, ?, ? )
+==> Parameters: 1(Long), user(String), 是的(String), 2026-07-02T16:53:14.405282300(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5f292ed6]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48b950bf] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1499287041 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,role,content,create_time FROM chat_message WHERE (user_id = ?) ORDER BY id DESC LIMIT 10
+==> Parameters: 1(Long)
+<==    Columns: id, user_id, role, content, create_time
+<==        Row: 39, 1, user, <<BLOB>>, 2026-07-02 16:53:14
+<==        Row: 38, 1, ai, <<BLOB>>, 2026-07-02 16:53:07
+<==        Row: 37, 1, user, <<BLOB>>, 2026-07-02 16:53:06
+<==        Row: 36, 1, ai, <<BLOB>>, 2026-07-02 16:53:00
+<==        Row: 35, 1, user, <<BLOB>>, 2026-07-02 16:52:59
+<==        Row: 34, 1, ai, <<BLOB>>, 2026-07-02 16:52:31
+<==        Row: 33, 1, user, <<BLOB>>, 2026-07-02 16:52:30
+<==        Row: 32, 1, ai, <<BLOB>>, 2026-07-02 16:52:09
+<==        Row: 31, 1, user, <<BLOB>>, 2026-07-02 16:52:08
+<==        Row: 30, 1, ai, <<BLOB>>, 2026-07-02 16:48:00
+<==      Total: 10
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48b950bf]
+2026-07-02T16:53:14.441+08:00  INFO 4872 --- [psy-mvp] [nio-8080-exec-7] com.example.psy.service.AiService        : [AI] 鐢ㄦ埛=1 褰撳墠娑堟伅闀垮害=2 鍘嗗彶鏉℃暟=10
+2026-07-02T16:53:15.278+08:00  INFO 4872 --- [psy-mvp] [nio-8080-exec-7] com.example.psy.service.AiService        : [AI] 璋冪敤鎴愬姛 model=qwen-turbo 鍘嗗彶鏉℃暟=10 鐢ㄦ埛娑堟伅闀垮害=2 鍥炲闀垮害=33
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@487e3dc5] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@319904196 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: INSERT INTO chat_message ( user_id, role, content, create_time ) VALUES ( ?, ?, ?, ? )
+==> Parameters: 1(Long), ai(String), 你心里装着这么多，一定很累吧。这些想法是不是经常在深夜里困扰着你？(String), 2026-07-02T16:53:15.278230100(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@487e3dc5]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@39e0ca88] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@860637415 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: INSERT INTO chat_message ( user_id, role, content, create_time ) VALUES ( ?, ?, ?, ? )
+==> Parameters: 1(Long), user(String), 你可以给我什么建议吗(String), 2026-07-02T16:53:45.001510300(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@39e0ca88]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5da0f4c3] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@209360096 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,role,content,create_time FROM chat_message WHERE (user_id = ?) ORDER BY id DESC LIMIT 10
+==> Parameters: 1(Long)
+<==    Columns: id, user_id, role, content, create_time
+<==        Row: 41, 1, user, <<BLOB>>, 2026-07-02 16:53:45
+<==        Row: 40, 1, ai, <<BLOB>>, 2026-07-02 16:53:15
+<==        Row: 39, 1, user, <<BLOB>>, 2026-07-02 16:53:14
+<==        Row: 38, 1, ai, <<BLOB>>, 2026-07-02 16:53:07
+<==        Row: 37, 1, user, <<BLOB>>, 2026-07-02 16:53:06
+<==        Row: 36, 1, ai, <<BLOB>>, 2026-07-02 16:53:00
+<==        Row: 35, 1, user, <<BLOB>>, 2026-07-02 16:52:59
+<==        Row: 34, 1, ai, <<BLOB>>, 2026-07-02 16:52:31
+<==        Row: 33, 1, user, <<BLOB>>, 2026-07-02 16:52:30
+<==        Row: 32, 1, ai, <<BLOB>>, 2026-07-02 16:52:09
+<==      Total: 10
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5da0f4c3]
+2026-07-02T16:53:45.039+08:00  INFO 4872 --- [psy-mvp] [io-8080-exec-10] com.example.psy.service.AiService        : [AI] 鐢ㄦ埛=1 褰撳墠娑堟伅闀垮害=10 鍘嗗彶鏉℃暟=10
+2026-07-02T16:53:45.997+08:00  INFO 4872 --- [psy-mvp] [io-8080-exec-10] com.example.psy.service.AiService        : [AI] 璋冪敤鎴愬姛 model=qwen-turbo 鍘嗗彶鏉℃暟=10 鐢ㄦ埛娑堟伅闀垮害=10 鍥炲闀垮害=37
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31a94763] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@996672296 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: INSERT INTO chat_message ( user_id, role, content, create_time ) VALUES ( ?, ?, ?, ? )
+==> Parameters: 1(Long), ai(String), 能和我聊聊具体是哪些想法让你睡不着吗？有时候把心里的话说出来，会轻松一些。(String), 2026-07-02T16:53:45.998503400(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31a94763]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f2d9fa9] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@965739014 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: INSERT INTO chat_message ( user_id, role, content, create_time ) VALUES ( ?, ?, ?, ? )
+==> Parameters: 1(Long), user(String), 父母对我的期望太大了 我成绩不好(String), 2026-07-02T16:54:17.844290200(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f2d9fa9]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1ff9487d] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@650176950 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,role,content,create_time FROM chat_message WHERE (user_id = ?) ORDER BY id DESC LIMIT 10
+==> Parameters: 1(Long)
+<==    Columns: id, user_id, role, content, create_time
+<==        Row: 43, 1, user, <<BLOB>>, 2026-07-02 16:54:18
+<==        Row: 42, 1, ai, <<BLOB>>, 2026-07-02 16:53:46
+<==        Row: 41, 1, user, <<BLOB>>, 2026-07-02 16:53:45
+<==        Row: 40, 1, ai, <<BLOB>>, 2026-07-02 16:53:15
+<==        Row: 39, 1, user, <<BLOB>>, 2026-07-02 16:53:14
+<==        Row: 38, 1, ai, <<BLOB>>, 2026-07-02 16:53:07
+<==        Row: 37, 1, user, <<BLOB>>, 2026-07-02 16:53:06
+<==        Row: 36, 1, ai, <<BLOB>>, 2026-07-02 16:53:00
+<==        Row: 35, 1, user, <<BLOB>>, 2026-07-02 16:52:59
+<==        Row: 34, 1, ai, <<BLOB>>, 2026-07-02 16:52:31
+<==      Total: 10
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1ff9487d]
+2026-07-02T16:54:17.878+08:00  INFO 4872 --- [psy-mvp] [nio-8080-exec-9] com.example.psy.service.AiService        : [AI] 鐢ㄦ埛=1 褰撳墠娑堟伅闀垮害=16 鍘嗗彶鏉℃暟=10
+2026-07-02T16:54:18.663+08:00  INFO 4872 --- [psy-mvp] [nio-8080-exec-9] com.example.psy.service.AiService        : [AI] 璋冪敤鎴愬姛 model=qwen-turbo 鍘嗗彶鏉℃暟=10 鐢ㄦ埛娑堟伅闀垮害=16 鍥炲闀垮害=53
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18d9ac09] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@964000765 wrapping com.mysql.cj.jdbc.ConnectionImpl@6fd6e50d] will not be managed by Spring
+==>  Preparing: INSERT INTO chat_message ( user_id, role, content, create_time ) VALUES ( ?, ?, ?, ? )
+==> Parameters: 1(Long), ai(String), 你背负着这么大的压力，一定很委屈吧。成绩不好就真的不够好吗？你愿意和我聊聊，这些期望具体是怎么影响你的吗？(String), 2026-07-02T16:54:18.664931100(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18d9ac09]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  23:41 min
+[INFO] Finished at: 2026-07-02T17:10:48+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.2.5:run (default-cli) on project psychological-counseling: Process terminated with exit code: -1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
